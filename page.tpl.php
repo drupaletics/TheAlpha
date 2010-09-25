@@ -47,6 +47,7 @@
           
           <div id="main-content" class="main content">
             <div id="main-content-inner" class="inner content-inner">
+              
               <?php if($content_top):?>
               <div id="content-top" class="content block-region region-0">
                 <div id="content-top-inner" class="content-inner block-inner region-0-inner inner">
@@ -54,6 +55,19 @@
                 </div><!--Fin content-top-inner-->
               </div><!--Fin content-top-->
               <?php endif;//content-top ?>
+              
+              <div id="content">
+                <?php print $content; ?>
+              </div>
+              
+              <?php if($content_bottom): ?>
+              <div id="content-bottom" class="content block-region region-100">
+                <div id="content-bottom-inner" class="content-inner block-inner region-100-inner inner">
+                  <?php print $content_bottom; ?>
+                </div><!--content-bottom--inner-->
+              </div><!--content-bottom-->
+              <?php endif;//content_bottom ?>
+              
             </div><!--Fin main-content-inner-->
           </div><!--Fin main-content-->
           
