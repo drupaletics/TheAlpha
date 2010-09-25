@@ -80,18 +80,30 @@
             </div><!--Fin main-content-inner-->
           </div><!--Fin main-content-->
           
-          <div id="main-block-1" class="main block-region region-1">
-            <div id="main-block-1-inner" class="block-inner region-1-inner inner main-inner">
+          <?php if($left || $right: ?>
+          <div id="main-blocks" class="wrapper block-wrapper">
+            <div id="main-blocks-inner" class="wrapper-inner block-wrapper-inner inner">
               
-            </div><!--main-block-1-inner-->
-          </div><!--main-block-1-->
-          
-          <div id="main-block-2" class="main block-region region-2">
-            <div id="main-block-2-inner" class="block-inner region-2-inner inner main-inner">
+              <?php if($left): ?>
+              <div id="main-block-1" class="main block-region region-1">
+                <div id="main-block-1-inner" class="block-inner region-1-inner inner main-inner">
+                  <?php print $left;?>
+                </div><!--main-block-1-inner-->
+              </div><!--main-block-1-->
+              <?php endif;//left ?>
               
-            </div><!--main-block-2-inner-->
-          </div><!--main-block-2-->
-           
+              <?php if($right): ?>
+              <div id="main-block-2" class="main block-region region-2">
+                <div id="main-block-2-inner" class="block-inner region-2-inner inner main-inner">
+                  <?php print $right;?>
+                </div><!--main-block-2-inner-->
+             </div><!--main-block-2-->
+             <?php endif;//right ?>
+             
+            </div><!--main-block-->
+          </div><!--main-blocks-->
+          <?php endif;//left right ?>
+                     
          </div><!--Fin main-zone-inner-->
        </div><!--Fin main-zone-->
        <!--Finish main content-zone--------------------------------------->
