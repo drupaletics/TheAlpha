@@ -66,8 +66,10 @@
               <?php endif;//content-top ?>
               
               <div id="content">
-                <?php print $content; ?>
-              </div>
+                <div id="content-inner">
+                  <?php print $content; ?>
+                </div><!--Fin content-inner-->
+              </div><!--Fin content-->
               
               <?php if($content_bottom): ?>
               <div id="content-bottom" class="content block-region region-100">
@@ -108,20 +110,23 @@
          </div><!--Fin main-zone-inner-->
        </div><!--Fin main-zone-->
        <!--Finish main content-zone--------------------------------------->
-       
+      
+      <!--Navigation-----------------------------------------------------> 
        <?php if($navigation || $primary_links): ?>
        <div id="navbar-1" class="navigation primary-links">
         <div id="navbar-1-inner" class="navigation-inner primary-links-inner">
               
           <?php if($navigation): ?>
           <div id="navigation-region" class="navigation block-region nav-region">
-            <?php print $navigation; ?>
-          </div>
+            <div id="navigation-region-inner" class="navigation-inner inner block-inner nav-region-inner">
+              <?php print $navigation; ?>
+            </div><!--Fin navigation-innerS-->
+          </div><!--Fin navigation-->
           <?php endif;//navigation ?>
               
           <?php if($primary_links): ?>
-          <div id="primary-links" class="navigation">
-            <div id="primary-links-inner" class="navigation-inner inner">
+          <div id="primary-links" class="navigation primary-links">
+            <div id="primary-links-inner" class="navigation-inner primary-links-inner inner">
               <?php print theme(array('links__system_main_menu', 'links'), $primary_links,
                 array(
                   'id' => 'main-menu',
@@ -137,10 +142,43 @@
             </div><!--Fin primary-links-inner-->
           </div><!--Fin primary-links-->
           <?php endif;//primary-links ?>
+          
         </div><!--navbar-1-inner-->
       </div><!--navbar-1-->
       <?php endif;//navigation primary_links ?>        
-       
+      
+      <?php if($sec_navigation || $secondary_links): ?>
+        
+        <?php if($sec_navigation): ?>
+        <div id="sec-navigation-region" class="navigation secondary-links">
+          <div id="sec-navigation-inner" class="navigation-inner secondary-links-inner block-inner inner">
+            <?php print $sec_navigation; ?>
+          </div><!--sec-navigation-inner-->
+         </div><!--sec-navigation-->
+         <?php endif;//sec_navigation ?>
+         
+         <?php if(secondary_links): ?>
+         <div id="secondary-links" class="navigation secondary-links">
+           <div id="secondary-links-inner" class="navigation-inner secondary-links-inner">
+             
+            <?php print theme(array('links__system_secondary_menu', 'links'), $secondary_links,
+              array(
+              'id' => 'secondary-menu',
+              'class' => 'links clearfix',
+             ),
+             array(
+               'text' => t('Secondary menu'),
+               'level' => 'h2',
+               'class' => 'element-invisible',
+             ));
+            ?>
+           </div><!--secondary-links-inner-->
+         </div><!--secondary-links-->
+         <?php endif;//secondary_links ?>
+         
+       <?php endif;//sec_navigation secondary-links ?>
+       <!--Finish Navigation---------------------------------------------------------->
+          
        <!--Last content-zone---------------------------------------------->
        <?php if($footer): ?>
        <div id="last-bottom-zone" class="zone">
@@ -154,6 +192,11 @@
        </div><!--Fin last-bottom-zone-->
        <?php endif; ?>
        <!--Finish last content-zone-------------------------------------->
-       
+      
+      </div><!--Fin page-wrapper-inner-->
+    </div><!--Fin page-wrapper-->
+    
+    <?php print $closure; ?>
+
     </body>
 </html>
