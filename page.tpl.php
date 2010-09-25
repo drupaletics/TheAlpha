@@ -103,10 +103,43 @@
             </div><!--main-block-->
           </div><!--main-blocks-->
           <?php endif;//left right ?>
-                     
+          
+           
          </div><!--Fin main-zone-inner-->
        </div><!--Fin main-zone-->
        <!--Finish main content-zone--------------------------------------->
+       
+       <?php if($navigation || $primary_links): ?>
+       <div id="navbar-1" class="navigation primary-links">
+        <div id="navbar-1-inner" class="navigation-inner primary-links-inner">
+              
+          <?php if($navigation): ?>
+          <div id="navigation-region" class="navigation block-region nav-region">
+            <?php print $navigation; ?>
+          </div>
+          <?php endif;//navigation ?>
+              
+          <?php if($primary_links): ?>
+          <div id="primary-links" class="navigation">
+            <div id="primary-links-inner" class="navigation-inner inner">
+              <?php print theme(array('links__system_main_menu', 'links'), $primary_links,
+                array(
+                  'id' => 'main-menu',
+                  'class' => 'links clearfix',
+                ),
+            
+               array(
+                  'text' => t('Main menu'),
+                  'level' => 'h2',
+                  'class' => 'element-invisible',
+                ));
+              ?>
+            </div><!--Fin primary-links-inner-->
+          </div><!--Fin primary-links-->
+          <?php endif;//primary-links ?>
+        </div><!--navbar-1-inner-->
+      </div><!--navbar-1-->
+      <?php endif;//navigation primary_links ?>        
        
        <!--Last content-zone---------------------------------------------->
        <?php if($footer): ?>
@@ -122,8 +155,5 @@
        <?php endif; ?>
        <!--Finish last content-zone-------------------------------------->
        
-     </div><!--Fin page-wrapper-inner-->
-    </div><!--Fin page-wrapper-->
-    
     </body>
 </html>
