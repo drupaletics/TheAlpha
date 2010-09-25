@@ -41,7 +41,15 @@
                   </div><!--Fin branding-extra-block-inner-->
                 </div><!--Fin branding-extra-block-->
                 <?php endif;//branding_extra ?>
-                              
+                
+                <?php if($mission): ?>
+                <div id="mission" class="branding last-top">
+                  <div id="mission-inner" class="branding-inner last-top-inner inner">
+                    <?php print($mission): ?>
+                  </div><!--Fin mission-inner-->
+                </div><!--Fin mission-->
+                <?php endif;//mission ?>
+                
               </div><!--Fin branding-inner-->
             </div><!--Fin branding-->
             <?php endif;//branding_extra logo site_name site_slogan?>            
@@ -53,34 +61,34 @@
        <!--Main content-zone-------------------------------------------->
         <div id="main-zone" class="zone">
           <div id="main-zone-inner" class="zone-inner inner">
-          
-          <div id="main-content" class="main content">
-            <div id="main-content-inner" class="inner content-inner">
+                    
+            <div id="main-content" class="main content">
+              <div id="main-content-inner" class="inner content-inner">
               
-              <?php if($content_top):?>
-              <div id="content-top" class="content block-region region-0">
-                <div id="content-top-inner" class="content-inner block-inner region-0-inner inner">
-                  <?php print $content_top;?>
-                </div><!--Fin content-top-inner-->
-              </div><!--Fin content-top-->
-              <?php endif;//content-top ?>
+                <?php if($content_top):?>
+                <div id="content-top" class="content block-region region-0">
+                  <div id="content-top-inner" class="content-inner block-inner region-0-inner inner">
+                    <?php print $content_top;?>
+                  </div><!--Fin content-top-inner-->
+                </div><!--Fin content-top-->
+                <?php endif;//content-top ?>
+                
+                <div id="content">
+                  <div id="content-inner">
+                    <?php print $content; ?>
+                  </div><!--Fin content-inner-->
+                </div><!--Fin content-->
+                
+                <?php if($content_bottom): ?>
+                <div id="content-bottom" class="content block-region region-100">
+                   <div id="content-bottom-inner" class="content-inner block-inner region-100-inner inner">
+                     <?php print $content_bottom; ?>
+                   </div><!--content-bottom--inner-->
+                </div><!--content-bottom-->
+                <?php endif;//content_bottom ?>
               
-              <div id="content">
-                <div id="content-inner">
-                  <?php print $content; ?>
-                </div><!--Fin content-inner-->
-              </div><!--Fin content-->
-              
-              <?php if($content_bottom): ?>
-              <div id="content-bottom" class="content block-region region-100">
-                <div id="content-bottom-inner" class="content-inner block-inner region-100-inner inner">
-                  <?php print $content_bottom; ?>
-                </div><!--content-bottom--inner-->
-              </div><!--content-bottom-->
-              <?php endif;//content_bottom ?>
-              
-            </div><!--Fin main-content-inner-->
-          </div><!--Fin main-content-->
+              </div><!--Fin main-content-inner-->
+            </div><!--Fin main-content-->
           
           <?php if($left || $right: ?>
           <div id="main-blocks" class="wrapper block-wrapper">
