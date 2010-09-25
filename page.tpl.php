@@ -19,21 +19,17 @@
             <div id="branding" class="last-top branding">
               <div id="branding-inner" class="branding-inner inner">
                 <?php if($site_name):?>
-                <h1>Sitename</h1>
+                <h1><?php print $site_name;?></h1>
                 <?php endif;//site_name ?>
                 
-                <?php if($logo):?>            
-                <div id="logo">
-                  <a href="/index.html" title="Homepage">
-                   <img src="images/logo.png" alt="Site-Logo"/>
-                  </a>
-                </div><!--Fin logo-->
+                <?php if ($logo): ?>
+                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
                 <?php endif;//logo ?>
                 
                 <?php if($branding_extra):?>
                 <div id="branding-extra-block" class="branding last-top region-0 block-region">
                   <div id="branding-extra-block-inner" class="branding last-top region-0 block-inner inner">
-                
+                    <?php print $branding_extra;?>
                   </div><!--Fin branding-extra-block-inner-->
                 </div><!--Fin branding-extra-block-->
                 <?php endif;//branding_extra ?>              
@@ -51,10 +47,10 @@
           
           <div id="main-content" class="main content">
             <div id="main-content-inner" class="inner content-inner">
-              <?php if(content_top):?>
+              <?php if($content_top):?>
               <div id="content-top" class="content block-region region-0">
                 <div id="content-top-inner" class="content-inner block-inner region-0-inner inner">
-                  
+                  <?php print $content_top;?>
                 </div><!--Fin content-top-inner-->
               </div><!--Fin content-top-->
               <?php endif;//content-top ?>
