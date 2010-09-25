@@ -109,15 +109,17 @@
        <!--Finish main content-zone--------------------------------------->
        
        <!--Last content-zone---------------------------------------------->
+       <?php if($footer): ?>
        <div id="last-bottom-zone" class="zone">
          <div id="last-bottom-zone-inner" class="zone-inner inner">
            <div id="last-bottom-block-1" class="last-bottom block-region region-1">
              <div id="last-bottom-block-1-inner" class="block-inner region-1-inner inner last-bottom-inner">
-               
+               <?php print $footer; ?>
              </div><!--Fin last-bottom-block-1-inner-->
            </div><!--Fin last-bottom-block-1-->
          </div><!--Fin last-bottom-zone-inner-->
        </div><!--Fin last-bottom-zone-->
+       <?php endif; ?>
        <!--Finish last content-zone-------------------------------------->
        
      </div><!--Fin page-wrapper-inner-->
