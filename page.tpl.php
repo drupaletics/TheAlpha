@@ -26,13 +26,22 @@
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
                 <?php endif;//logo ?>
                 
+                <?php if($site_slogan): ?>
+                <div id="site-slogan" class="branding last-top">
+                  <div id="site-slogan-inner" class="branding-inner last-top-inner inner">
+                    <?php print $site_slogan; ?>
+                  </div><!--Fin site-slogan-inner-->
+                </div><!--Fin site-slogan-->
+                <?php endif;//site_slogan ?>
+
                 <?php if($branding_extra):?>
                 <div id="branding-extra-block" class="branding last-top region-0 block-region">
-                  <div id="branding-extra-block-inner" class="branding last-top region-0 block-inner inner">
+                  <div id="branding-extra-block-inner" class="branding-inner last-top-inner region-0 block-inner inner">
                     <?php print $branding_extra;?>
                   </div><!--Fin branding-extra-block-inner-->
                 </div><!--Fin branding-extra-block-->
-                <?php endif;//branding_extra ?>              
+                <?php endif;//branding_extra ?>
+                              
               </div><!--Fin branding-inner-->
             </div><!--Fin branding-->
             <?php endif;//branding_extra logo site_name site_slogan?>            
