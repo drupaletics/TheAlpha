@@ -90,22 +90,22 @@
               </div><!--Fin main-content-inner-->
             </div><!--Fin main-content-->
           
-          <?php if($left || $right: ?>
+          <?php if($main_block_1 || $main_block2: ?>
           <div id="main-blocks" class="wrapper block-wrapper">
             <div id="main-blocks-inner" class="wrapper-inner block-wrapper-inner inner">
               
-              <?php if($left): ?>
+              <?php if($main_block_1): ?>
               <div id="main-block-1" class="main block-region region-1">
                 <div id="main-block-1-inner" class="block-inner region-1-inner inner main-inner">
-                  <?php print $left;?>
+                  <?php print $main_block_1;?>
                 </div><!--main-block-1-inner-->
               </div><!--main-block-1-->
               <?php endif;//left ?>
               
-              <?php if($right): ?>
+              <?php if($main_block_2): ?>
               <div id="main-block-2" class="main block-region region-2">
                 <div id="main-block-2-inner" class="block-inner region-2-inner inner main-inner">
-                  <?php print $right;?>
+                  <?php print $main_block_2;?>
                 </div><!--main-block-2-inner-->
              </div><!--main-block-2-->
              <?php endif;//right ?>
@@ -188,12 +188,12 @@
        <!--Finish Navigation---------------------------------------------------------->
           
        <!--Last content-zone---------------------------------------------->
-       <?php if($footer): ?>
+       <?php if($last_bottom_1): ?>
        <div id="last-bottom-zone" class="zone">
          <div id="last-bottom-zone-inner" class="zone-inner inner">
            <div id="last-bottom-block-1" class="last-bottom block-region region-1">
              <div id="last-bottom-block-1-inner" class="block-inner region-1-inner inner last-bottom-inner">
-               <?php print $footer; ?>
+               <?php print $last_bottom_1; ?>
              </div><!--Fin last-bottom-block-1-inner-->
            </div><!--Fin last-bottom-block-1-->
          </div><!--Fin last-bottom-zone-inner-->
