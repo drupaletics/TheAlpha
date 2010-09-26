@@ -62,7 +62,7 @@
                 <?php if($mission): ?>
                 <div id="mission" class="branding last-top">
                   <div id="mission-inner" class="branding-inner last-top-inner inner">
-                    <?php print($mission): ?>
+                    <?php print($mission); ?>
                   </div><!--Fin mission-inner-->
                 </div><!--Fin mission-->
                 <?php endif;//mission ?>

@@ -15,8 +15,8 @@ regions[navigation] = Main-Navigation
 regions[sec_navigation] = Secondary-Navigation
 regions[last_bottom_1] = Last region
 
-stylesheets[all] = css/layout.css
-stylesheets[all] = css/style.css
+stylesheets[all] = css/layout_bases/layout_base.css
+stylesheets[all] = css/layout_bases/main_content-center.dcss
 stylesheets[all] = css/blocks.css
 stylesheets[all] = css/nodes.css
 stylesheets[all] = css/navigation.css
