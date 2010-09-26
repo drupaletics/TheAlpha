@@ -1,3 +1,23 @@
+<?
+/**
+ * page.tpl.php
+ * Kleinster Baustein in TheAlpha sind die Double-Wrapper-Konstrukte:
+ * <div id="ausen">
+ *  <div id="innen">
+ *  
+ *  </div>
+ * </div>
+ * Diese geben dem Theme eine gesunde Basis für hohe Konsistenz, da sie
+ * uns ermöglichen in allen Browsern ein einheitliches Box-Modell nach
+ * zu bauen.
+ * Aus diesem Grund bilden sie den Grundstein jedes HTML-Fragmentes im 
+ * Framework.
+ * Die Page-Wrapper ermöglichen uns einen einfachen Weg der horizontalen
+ * Zentralisierung.
+ * Um Floats effektiv clearen zu können ohne unnötigen Markup erzeugen zu 
+ * müssen wir die Clearfix-Methode von Positioniseverything angewandt.
+ */
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -6,11 +26,8 @@
         <title>New Web Project</title>
     </head>
     <body>
-    <!--page-wrapper ermöglichen leichte horizontale Zentralisierung-->
     <div id="page-wrapper" class="wrapper">
-      <!--inner page-wrapper ermöglichen grafische rahmen-->
       <div id="page-wrapper-inner" class="wrapper inner">
-      
        <!--First content-zone-----------------------------------------> 
         <div id="last-top-zone" class="zone clearfix">
           <div id="last-top-zone-inner" class="zone-inner inner">
@@ -21,7 +38,7 @@
                 <?php if($site_name):?>
                 <h1><?php print $site_name;?></h1>
                 <?php endif;//site_name ?>
-                
+
                 <?php if ($logo): ?>
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
                 <?php endif;//logo ?>
@@ -53,6 +70,7 @@
               </div><!--Fin branding-inner-->
             </div><!--Fin branding-->
             <?php endif;//branding_extra logo site_name site_slogan?>            
+
           </div><!--Fin last-top-zone-inner-->                    
         </div><!--Fin last-top-zone-->
        <!--Finish first content-zone------------------------------------>
