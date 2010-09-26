@@ -1,0 +1,32 @@
+/*****************************
+ * main-zone-layout with content to the left
+ */
+ 
+#main-zone {
+  overflow: hidden;
+}
+
+#main-zone .main {
+  float: left;
+}
+
+#main-content {
+  width: 560px;
+  margin-left: 0;
+  margin-right: -560px;
+  padding: 0;
+}
+
+#main-block-1 {
+  width: 200px;
+  margin-left: 560px;
+  margin-right: -560px;
+  padding: 0;
+}
+
+#main-block-2 {
+  width: 200px;
+  margin-left: 760px;
+  margin-right: -960px;
+  padding: 0;
+}
