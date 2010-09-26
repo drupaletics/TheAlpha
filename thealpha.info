@@ -1,4 +1,4 @@
-name = TheAlpha
+name = thealpha
 description = TheAlpha isnt a ready2go-Drupal-theme out-of-the box!! But it is a more&more growing drupal-rapid-theming-framework to build up hundreds of different site-layout massiv rapid.
 
 screenshot = project-data/screenshot.png
@@ -9,24 +9,13 @@ engine = phptemplate
 regions[branding_extra] = Branding-Extrablock
 regions[content_top] = Content-above
 regions[content_bottom] = Content-below
-regions[main_block_1] = Main-Blocks 1
-regions[main_block_2] = Main-Blocks 2
+regions[main_block1] = Main-Blocks 1
+regions[main_block2] = Main-Blocks 2
 regions[navigation] = Main-Navigation 
 regions[sec_navigation] = Secondary-Navigation
 regions[last_bottom_1] = Last region
 
-stylesheets[all] = css/layout_bases/layout_base.css
-stylesheets[all] = css/layout_bases/main_content-center.dcss
-stylesheets[all] = css/blocks.css
-stylesheets[all] = css/nodes.css
-stylesheets[all] = css/navigation.css
-stylesheets[all] = css/views-styles.css
-stylesheets[all] = css/comments.css
-stylesheets[all] = css/forms.css
-stylesheets[all] = css/fields.css
-
-stylesheets[print] = css/print.css
-stylesheets[handheld] = css/mobile.css
-stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
+stylesheets[all][] = css/layout-bases/layout_base.css
+stylesheets[all][] = css/layout-bases/main_content-left.css
 
 scripts[] = js/script.js

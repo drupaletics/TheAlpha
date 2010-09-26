@@ -22,13 +22,15 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>New Web Project</title>
+      <title><?php print $head_title; ?></title>
+        <?php print $head; ?>
+        <?php print $styles; ?>
+        <?php print $scripts; ?>
     </head>
+    
     <body>
     <div id="page-wrapper" class="wrapper">
       <div id="page-wrapper-inner" class="wrapper inner">
-       <!--First content-zone-----------------------------------------> 
         <div id="last-top-zone" class="zone clearfix">
           <div id="last-top-zone-inner" class="zone-inner inner">
             <!--Branding -->
@@ -73,10 +75,10 @@
 
           </div><!--Fin last-top-zone-inner-->                    
         </div><!--Fin last-top-zone-->
-       <!--Finish first content-zone------------------------------------>
+       <!--Finish first content-zone##################################-->
         
       
-       <!--Main content-zone-------------------------------------------->
+       <!--Main content-zone##########################################-->
         <div id="main-zone" class="zone clearfix">
           <div id="main-zone-inner" class="zone-inner inner">
                     
@@ -101,39 +103,39 @@
                 <div id="content-bottom" class="content block-region region-100">
                    <div id="content-bottom-inner" class="content-inner block-inner region-100-inner inner">
                      <?php print $content_bottom; ?>
-                   </div><!--content-bottom--inner-->
+                   </div><!--Fin content-bottom--inner-->
                 </div><!--content-bottom-->
                 <?php endif;//content_bottom ?>
               
               </div><!--Fin main-content-inner-->
             </div><!--Fin main-content-->
           
-          <?php if($main_block_1 || $main_block2: ?>
+          <?php //if($main_block1 || $main_block2): ?>
               
-              <?php if($main_block_1): ?>
+              <?php //if($main_block1): ?>
               <div id="main-block-1" class="main block-region region-1">
                 <div id="main-block-1-inner" class="block-inner region-1-inner inner main-inner">
-                  <?php print $main_block_1;?>
+                  <?php print $main_block1;?>
                 </div><!--main-block-1-inner-->
               </div><!--main-block-1-->
-              <?php endif;//left ?>
+              <?php //endif;//left ?>
               
-              <?php if($main_block_2): ?>
+              <?php //if($main_block2): ?>
               <div id="main-block-2" class="main block-region region-2">
                 <div id="main-block-2-inner" class="block-inner region-2-inner inner main-inner">
-                  <?php print $main_block_2;?>
+                  <?php print $main_block2; ?>
                 </div><!--main-block-2-inner-->
              </div><!--main-block-2-->
-             <?php endif;//right ?>
+             <?php //endif;//right ?>
              
-          <?php endif;//left right ?>
+          <?php //endif;//left right ?>
           
            
          </div><!--Fin main-zone-inner-->
        </div><!--Fin main-zone-->
-       <!--Finish main content-zone--------------------------------------->
+       <!--Finish main content-zone#########################################################-->
       
-      <!--Navigation-----------------------------------------------------> 
+      <!--Navigation########################################################################-->
        <?php if($navigation || $primary_links): ?>
        <div id="navbar-1" class="navigation primary-links clearfix">
         <div id="navbar-1-inner" class="navigation-inner primary-links-inner">
@@ -199,9 +201,9 @@
          <?php endif;//secondary_links ?>
          
        <?php endif;//sec_navigation secondary-links ?>
-       <!--Finish Navigation---------------------------------------------------------->
+       <!--Finish Navigation###########################################################-->
           
-       <!--Last content-zone---------------------------------------------->
+       <!--Last content-zone###########################################################-->
        <?php if($last_bottom_1): ?>
        <div id="last-bottom-zone" class="zone clearfix">
          <div id="last-bottom-zone-inner" class="zone-inner inner">
@@ -213,7 +215,7 @@
          </div><!--Fin last-bottom-zone-inner-->
        </div><!--Fin last-bottom-zone-->
        <?php endif; ?>
-       <!--Finish last content-zone-------------------------------------->
+       <!--Finish last content-zone#############################################-->
       
       </div><!--Fin page-wrapper-inner-->
     </div><!--Fin page-wrapper-->
