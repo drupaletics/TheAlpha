@@ -12,7 +12,7 @@
       <div id="page-wrapper-inner" class="wrapper inner">
       
        <!--First content-zone-----------------------------------------> 
-        <div id="last-top-zone" class="zone">
+        <div id="last-top-zone" class="zone clearfix">
           <div id="last-top-zone-inner" class="zone-inner inner">
             <!--Branding -->
             <?php if($branding_extra || $logo || $site_name || $site_slogan): ?>
@@ -59,7 +59,7 @@
         
       
        <!--Main content-zone-------------------------------------------->
-        <div id="main-zone" class="zone">
+        <div id="main-zone" class="zone clearfix">
           <div id="main-zone-inner" class="zone-inner inner">
                     
             <div id="main-content" class="main content">
@@ -117,7 +117,7 @@
       
       <!--Navigation-----------------------------------------------------> 
        <?php if($navigation || $primary_links): ?>
-       <div id="navbar-1" class="navigation primary-links">
+       <div id="navbar-1" class="navigation primary-links clearfix">
         <div id="navbar-1-inner" class="navigation-inner primary-links-inner">
               
           <?php if($navigation): ?>
@@ -154,7 +154,7 @@
       <?php if($sec_navigation || $secondary_links): ?>
         
         <?php if($sec_navigation): ?>
-        <div id="sec-navigation-region" class="navigation secondary-links">
+        <div id="sec-navigation-region" class="navigation secondary-links clearfix">
           <div id="sec-navigation-inner" class="navigation-inner secondary-links-inner block-inner inner">
             <?php print $sec_navigation; ?>
           </div><!--sec-navigation-inner-->
@@ -185,7 +185,7 @@
           
        <!--Last content-zone---------------------------------------------->
        <?php if($last_bottom_1): ?>
-       <div id="last-bottom-zone" class="zone">
+       <div id="last-bottom-zone" class="zone clearfix">
          <div id="last-bottom-zone-inner" class="zone-inner inner">
            <div id="last-bottom-block-1" class="last-bottom block-region region-1">
              <div id="last-bottom-block-1-inner" class="block-inner region-1-inner inner last-bottom-inner">
