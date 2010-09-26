@@ -91,8 +91,6 @@
             </div><!--Fin main-content-->
           
           <?php if($main_block_1 || $main_block2: ?>
-          <div id="main-blocks" class="wrapper block-wrapper">
-            <div id="main-blocks-inner" class="wrapper-inner block-wrapper-inner inner">
               
               <?php if($main_block_1): ?>
               <div id="main-block-1" class="main block-region region-1">
@@ -110,8 +108,6 @@
              </div><!--main-block-2-->
              <?php endif;//right ?>
              
-            </div><!--main-block-->
-          </div><!--main-blocks-->
           <?php endif;//left right ?>
           
            
