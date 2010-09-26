@@ -1,0 +1,24 @@
+/*********************
+ * Basic-layout-definitions 
+ */
+ 
+/*Horizontal centeralization*/
+#page-wrapper {
+  margin: 0 auto;
+}
+
+/*.inner-boxes to build the same box-modell for all browsers*/
+.inner {
+  margin: 0;
+  width: auto;
+}
+
+/*markup-free float-clearing based on http://www.positioniseverything.net/easyclearing.html*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
