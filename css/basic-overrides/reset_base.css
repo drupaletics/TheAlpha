@@ -1,0 +1,31 @@
+/* 
+    Document   : reset_base.css
+    Created on : 20.11.2010, 14:02:44
+    Author     : Siegfried Dünkel <chaosprinz76@googlemail.com>
+    Description:
+        Resetting the browser-standards to get a the same confirm and robust
+        layout in all browsers
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+a img {
+  border: 0;
+}
+
+:focus { /* @todo: remember to define focus styles! */
+  outline: 0px;
+}
+
+select {
+  font-family: inherit;
+}
