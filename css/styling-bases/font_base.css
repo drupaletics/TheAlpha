@@ -1,0 +1,38 @@
+/* 
+    Document   : font_base
+    Created on : 20.11.2010, 13:34:12
+    Author     : Siegfried Dünkel <chaosprinz76@googlemail.com>
+    Description:
+        Basic-Fontstyles for TheAlpha-Theme
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 95%;
+    line-height: 1.5;
+}
+
+#page-wrapper {
+  font-size: 1em;
+  letter-spacing: 0.05em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
