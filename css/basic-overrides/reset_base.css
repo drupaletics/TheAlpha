@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   outline: 0;
+  border-spacing: 0;
 }
 
 a img {
@@ -28,4 +29,12 @@ a img {
 
 select {
   font-family: inherit;
+}
+
+table {
+  border-spacing: 0;
+}
+
+p, li, ul, ol, dl {
+  margin: 10px 0;
 }
