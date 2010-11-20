@@ -15,7 +15,10 @@ regions[navigation] = Main-Navigation
 regions[sec_navigation] = Secondary-Navigation
 regions[last_bottom_1] = Last region
 
+stylesheets[all][] = css/basic-overrides/system.css
+stylesheets[all][] = css/basic-overrides/reset_base.css
 stylesheets[all][] = css/layout-bases/layout_base.css
 stylesheets[all][] = css/layout-bases/main_content-left.css
+stylesheets[all][] = css/styling-bases/font_base.css
 
 scripts[] = js/script.js
