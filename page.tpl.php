@@ -2,11 +2,8 @@
 /**
  * page.tpl.php
  * Kleinster Baustein in TheAlpha sind die Double-Wrapper-Konstrukte:
- * <div id="ausen">
- *  <div id="innen">
- *  
- *  </div>
- * </div>
+ * div -- div-inner etc.
+ * 
  * Diese geben dem Theme eine gesunde Basis für hohe Konsistenz, da sie
  * uns ermöglichen in allen Browsern ein einheitliches Box-Modell nach
  * zu bauen.
@@ -20,7 +17,7 @@
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html<?php print drupal_attributes($html_attr); ?>>
     <head>
       <title><?php print $head_title; ?></title>
         <?php print $head; ?>
